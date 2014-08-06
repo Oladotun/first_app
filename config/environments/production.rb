@@ -19,6 +19,8 @@ FirstApp::Application.configure do
 
   # Generate digests for assets URLs
   config.assets.digest = true
+  # Silence deprecation warnings
+  config.active_support.deprecation = :silence
 
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
